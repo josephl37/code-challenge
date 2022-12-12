@@ -1,9 +1,7 @@
-// Problem 1 - findSum
 const findSum = array => array.reduce((acc, cv) => {
     return acc + cv;
 })
 
-// Problem 2 - findFrequency
 const findFrequency = array => {
 
     const result = {};
@@ -33,7 +31,6 @@ for (let i = 0; i < array.length; i++) {
  return result;
 };
 
-// Problem 3 - isPalindrome
 const isPalindrome = str => {
     
     const intialString = str.toLowerCase();
@@ -49,7 +46,6 @@ const isPalindrome = str => {
     }
 };
 
-// Problem 4 - largestPair
 const largestPair = array => {
 
     let maxProduct = 0;
@@ -67,7 +63,6 @@ for (let i = 0; i < array.length - 1; i++) {
 return maxProduct;
 };
 
-// Problem 5 - removeParenth
 const removeParenth = str => {
     const firstSearch = '(';
     const secondSearch = ')';
@@ -80,7 +75,6 @@ const removeParenth = str => {
     return str.replace(word, '');
 };
 
-// Problem 6 - scoreScrabble
 const scoreScrabble = str => {
     let points = 0;
 
